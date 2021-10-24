@@ -3,6 +3,7 @@ title: MacBook(M1)遇到的问题
 date: 2021-10-09 00:26:28
 tags:
     - mac
+    - issue
 categories:
     - mac
 ---
