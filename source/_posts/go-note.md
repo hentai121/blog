@@ -10,7 +10,6 @@ categories:
 * [Go安装](#install)
 * [Go工程结构](#struct)
 * [Go程序的编译和运行](#compile)
-* [IDE工具的使用](#ide)
 
 ### <h2 id="install">Go安装</h2>
 
@@ -22,7 +21,7 @@ categories:
 
 - 配置环境变量 GOPATH，GOPATH 是一个路径，用来存放开发中需要用到的代码包
 	
-2. Linux 下的安装步骤
+1. Linux 下的安装步骤
 
 - [下载地址](https://golang.google.cn/dl/) 
 
@@ -73,8 +72,3 @@ go install file.go
 go run file.go
 
 ```
-
-### <h2 id="ide">IDE工具的使用</h2>
-
-* 使用 goland 作为 go 的开发工具
-* 调试配置通过 Go Build，将Run kind设置为“Directory”
