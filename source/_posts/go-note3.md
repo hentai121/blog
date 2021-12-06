@@ -9,8 +9,6 @@ categories:
 
 * [Go复合类型](#compound)
 * [Go结构体](#struct)
-* [Go程序的编译和运行](#compile)
-* [IDE工具的使用](#ide)
 
 ### <h2 id="compound">Go复合类型</h2>
 

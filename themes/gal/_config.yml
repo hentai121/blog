@@ -12,7 +12,7 @@ author_image: avatar.jpg
 
 # 程序员模式, 适合于用该程序的爱好写技术文章的人员, 默认不开启
 # 选择开启后将会改变article-excerpt, article-content等的显示
-programmer_mode: true
+programmer_mode: false
 
 # 导航菜单
 menu:
@@ -98,7 +98,7 @@ slide_background:
 
 
 # 是否开启欧尼酱功能
-open_oni: false
+open_oni: true
 # 欧尼酱功能设置, 前提为open_oni: true
 oni_setting:
   # 限三项, 可以自己配置链接(一般是上面的menu或者自己的page)
