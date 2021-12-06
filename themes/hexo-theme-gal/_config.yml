@@ -4,7 +4,7 @@ logo_image:  # 使用路径, 填写文件名即可(比如, logo_image: logo.png 
 navbar_text: UerAx # 如果没有Logo, 则设置为false, 并且设置navbar_text(否则默认为站点标题, 最好进行设置)
 
 # 必填, 设定小型设备展示背景图, 指向source/imgs, 比如xs_bg_image: bg.png -> source/imgs/bg.png
-xs_bg_image: phonebg.jpg
+xs_bg_image: xsbg.gif
 
 # 必填, 个人头像, 如果是路径, 则指向source/imgs
 # 也可以填http:// OR https:// url地址
@@ -12,7 +12,7 @@ author_image: avatar.jpg
 
 # 程序员模式, 适合于用该程序的爱好写技术文章的人员, 默认不开启
 # 选择开启后将会改变article-excerpt, article-content等的显示
-programmer_mode: true
+programmer_mode: false
 
 # 导航菜单
 menu:
@@ -65,12 +65,26 @@ sidebar:
 
 # 友情链接配置, 要先开启上面的friend_links
 friend_links:
+#  - name: KDays Forum
+#    link: http://kdays.net/days/
+#  - name: 绅士导航♂
+#    link: http://www.gal123.com/
+#  - name: 萌导航
+#    link: http://www.moe123.com/
   - name: UerAx
     link: https://github.com/hentai121
+    
+
 # 个人链接配置, 要先开启上面的links
 links:
   - name: Github
     link: https://github.com/hentai121
+#  - name: Github
+#    link: https://github.com/ZEROKISEKI/
+#  - name: Coding
+#    link: https://coding.net/u/SORA1
+#  - name: 知乎
+#    link: https://www.zhihu.com/people/aonosora/activities
 
 
 # 是否使用公告
@@ -145,6 +159,12 @@ comment:
         client_id:  # 必填项
         client_secret: # 必填项
         redirect_uri: # 可以填也可以不填
+  # 是否改成gitalk, gitment的必填项也是要填的
+  gitalk:
+    change_to_gitalk: false
+    # 出现403错误, 增加proxy, default: https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token
+    # 具体讨论: https://github.com/gitalk/gitalk/issues/429
+    proxy: https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token
 
 # 是否使用评论系统
 use_comment: false
@@ -153,3 +173,7 @@ node_sass:
   outputStyle: compressed
   precision: 5
   sourceComments: false
+
+# 是否添加live2d
+# 项目地址: https://github.com/stevenjoezhang/live2d-widget
+use_l2d: false

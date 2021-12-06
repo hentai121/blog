@@ -12,7 +12,7 @@ author_image: avatar.jpg
 
 # 程序员模式, 适合于用该程序的爱好写技术文章的人员, 默认不开启
 # 选择开启后将会改变article-excerpt, article-content等的显示
-programmer_mode: false
+programmer_mode: true
 
 # 导航菜单
 menu:
@@ -80,7 +80,7 @@ links:
 # 在主题下的layout/_partial/issue.ejs进行内容修改
 # 如果不用公告, 请设置此项为false
 use_issue: true
-
+highlight_theme: atom-one-dark
 # 背景图功能
 # 必填项
 slide_background:
