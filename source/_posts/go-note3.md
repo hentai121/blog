@@ -9,6 +9,7 @@ categories:
 
 * [Go复合类型](#compound)
 * [Go结构体](#struct)
+* [Go接口](#interface)
 
 ### <h2 id="compound">Go复合类型</h2>
 
@@ -127,4 +128,57 @@ t := new(Test)
 
 alias := t.Method
 alias(val)  // t.Method(t)
+```
+
+### <h2 id="interface">Go接口</h2>
+
+```go
+// 实现了接口的所有方法，则认为实现了该接口
+type Person interface {
+  GetName() string
+  GetSex
+}
+
+type Student struct {
+  Name string
+  Sex string
+}
+
+func (s *Student) GetName() string {
+  return s.Name
+}
+
+func (s *Student) Sex() string {
+  return s.Sex
+}
+
+//  判断interface是否实现接口
+type Animal struct {}
+
+var t interface{}
+t = &Animal{}
+_, ok := t.(Person) // false
+t = &Student{}
+_, ok := t.(Person) // true
+
+// 判断接口类型
+switch t.(type) {
+case int: // int类型
+case string: // string类型
+default: // 其他类型
+}
+
+//空接口就是不包含任何方法的接口。正因为如此，所有的类型都实现了空接口。
+var a interface{}
+a = ""
+a = 1
+
+
+// 一个包含nil指针的接口不是nil接口
+var p Person
+p = &Student{}
+notNil := func() *Student { return nil } 
+p = notNil() // p != nil 因为interface中的value为nil但type不为nil
+isNil := func() *Person { return nil }
+p = isNil() // p == nil
 ```
