@@ -153,11 +153,11 @@ leancloud:
 # 如果不用的话要把下面的use_comment设置为false
 comment:
   gitment:
-      owner: # 必填项, 你的GitHub ID
-      repo: # 必填项  你的存储评论的repo
+      owner: hentai121# 必填项, 你的GitHub ID
+      repo: comment-repo# 必填项  你的存储评论的repo
       oauth:
-        client_id:  # 必填项
-        client_secret: # 必填项
+        client_id:  d63028f3c1b62526a9a2# 必填项
+        client_secret: bdb1305e972b82f47ea0b5c84d52cd7dcba5e11d# 必填项
         redirect_uri: # 可以填也可以不填
   # 是否改成gitalk, gitment的必填项也是要填的
   gitalk:
@@ -167,7 +167,7 @@ comment:
     proxy: https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token
 
 # 是否使用评论系统
-use_comment: false
+use_comment: true
 
 node_sass:
   outputStyle: compressed
